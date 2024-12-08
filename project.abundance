@@ -391,8 +391,8 @@
         {
             "atomType": "Molecule",
             "name": "Pot",
-            "x": 0.1984126984126984,
-            "y": 0.4874651810584958,
+            "x": 0.20105820105820105,
+            "y": 0.4651810584958217,
             "uniqueID": 1732557331981,
             "ioValues": [],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -407,7 +407,7 @@
                     "ioValues": [
                         {
                             "name": "number or geometry",
-                            "ioValue": 1733617217199
+                            "ioValue": 1733619252224
                         }
                     ],
                     "description": "Connect geometry here to make it available in the next level up. "
@@ -681,7 +681,7 @@
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 0
+                            "ioValue": 3
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
@@ -689,8 +689,8 @@
                 {
                     "atomType": "GitHubMolecule",
                     "name": "RotatePattern",
-                    "x": 0.7566137566137566,
-                    "y": 0.713091922005571,
+                    "x": 0.7096560846560847,
+                    "y": 0.7743732590529249,
                     "uniqueID": 1733619203736,
                     "ioValues": [
                         {
@@ -699,7 +699,7 @@
                         },
                         {
                             "name": "Number",
-                            "ioValue": 10
+                            "ioValue": 7
                         },
                         {
                             "name": "Angle",
@@ -803,7 +803,7 @@
                                 },
                                 {
                                     "name": "Number",
-                                    "ioValue": 10
+                                    "ioValue": 7
                                 },
                                 {
                                     "name": "Angle",
@@ -900,6 +900,50 @@
                     "unitsKey": "Inches",
                     "fileTypeVersion": 1,
                     "compiledBom": []
+                },
+                {
+                    "atomType": "Difference",
+                    "name": "Difference",
+                    "x": 0.8558201058201057,
+                    "y": 0.41225626740947074,
+                    "uniqueID": 1733619252224,
+                    "ioValues": [
+                        {
+                            "name": "geometry2",
+                            "ioValue": 1733619400957
+                        },
+                        {
+                            "name": "geometry1",
+                            "ioValue": 1733617217199
+                        }
+                    ],
+                    "description": "Subtracts shape two from shape one."
+                },
+                {
+                    "atomType": "Rotate",
+                    "name": "Rotate",
+                    "x": 0.8181216931216931,
+                    "y": 0.7910863509749304,
+                    "uniqueID": 1733619400957,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1733619203736
+                        },
+                        {
+                            "name": "x-axis degrees",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "y-axis degrees",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "z-axis degrees",
+                            "ioValue": 160
+                        }
+                    ],
+                    "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
                 }
             ],
             "allConnectors": [
@@ -940,10 +984,10 @@
                 },
                 {
                     "ap1Name": "geometry",
-                    "ap2Name": "number or geometry",
+                    "ap2Name": "geometry1",
                     "ap2Primary": false,
                     "ap1ID": 1733617217199,
-                    "ap2ID": 1732557331648
+                    "ap2ID": 1733619252224
                 },
                 {
                     "ap1Name": "geometry",
@@ -993,6 +1037,27 @@
                     "ap2Primary": false,
                     "ap1ID": 1733619190385,
                     "ap2ID": 1733619203736
+                },
+                {
+                    "ap1Name": "Geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1733619203736,
+                    "ap2ID": 1733619400957
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 1733619252224,
+                    "ap2ID": 1732557331648
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry2",
+                    "ap2Primary": false,
+                    "ap1ID": 1733619400957,
+                    "ap2ID": 1733619252224
                 }
             ],
             "fileTypeVersion": 1,
@@ -1051,8 +1116,8 @@
                 {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
-                    "x": 0.09193121693121693,
-                    "y": 0.28690807799442897,
+                    "x": 0.031746031746031744,
+                    "y": 0.2395543175487465,
                     "uniqueID": 1733617333384,
                     "ioValues": [
                         {
@@ -1069,8 +1134,8 @@
                 {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
-                    "x": 0.10251322751322753,
-                    "y": 0.5348189415041783,
+                    "x": 0.03505291005291005,
+                    "y": 0.4874651810584958,
                     "uniqueID": 1733617349780,
                     "ioValues": [
                         {
@@ -1087,8 +1152,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.1931216931216931,
-                    "y": 0.4735376044568245,
+                    "x": 0.1111111111111111,
+                    "y": 0.4568245125348189,
                     "uniqueID": 1733617360990,
                     "ioValues": [
                         {
@@ -1113,8 +1178,8 @@
                 {
                     "atomType": "ShrinkWrap",
                     "name": "Shrink Wrap",
-                    "x": 0.27711640211640215,
-                    "y": 0.33983286908078,
+                    "x": 0.17063492063492064,
+                    "y": 0.28690807799442897,
                     "uniqueID": 1733617383568,
                     "ioValues": [
                         {
@@ -1147,8 +1212,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.19907407407407407,
-                    "y": 0.29526462395543174,
+                    "x": 0.10714285714285714,
+                    "y": 0.2479108635097493,
                     "uniqueID": 1733617422805,
                     "ioValues": [
                         {
@@ -1173,8 +1238,8 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.35714285714285715,
-                    "y": 0.2479108635097493,
+                    "x": 0.23875661375661375,
+                    "y": 0.14484679665738162,
                     "uniqueID": 1733617461921,
                     "ioValues": [
                         {
@@ -1191,8 +1256,8 @@
                 {
                     "atomType": "Rotate",
                     "name": "Rotate",
-                    "x": 0.46164021164021163,
-                    "y": 0.2841225626740947,
+                    "x": 0.3187830687830688,
+                    "y": 0.12813370473537605,
                     "uniqueID": 1733617492789,
                     "ioValues": [
                         {
@@ -1215,225 +1280,10 @@
                     "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
                 },
                 {
-                    "atomType": "GitHubMolecule",
-                    "name": "RotatePattern",
-                    "x": 0.6104497354497355,
-                    "y": 0.42061281337047357,
-                    "uniqueID": 1733617553596,
-                    "ioValues": [
-                        {
-                            "name": "Shape",
-                            "ioValue": 1733617492789
-                        },
-                        {
-                            "name": "Number",
-                            "ioValue": 10
-                        },
-                        {
-                            "name": "Angle",
-                            "ioValue": 36
-                        }
-                    ],
-                    "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
-                    "topLevel": false,
-                    "allAtoms": [
-                        {
-                            "atomType": "Output",
-                            "name": "Output",
-                            "x": 0.98,
-                            "y": 0.5,
-                            "uniqueID": 1733617553911,
-                            "ioValues": [
-                                {
-                                    "name": "number or geometry",
-                                    "ioValue": 1733617553860
-                                }
-                            ],
-                            "description": "Connect geometry here to make it available in the next level up. "
-                        },
-                        {
-                            "atomType": "Input",
-                            "name": "Shape",
-                            "x": 0.04,
-                            "y": 0.3788300835654596,
-                            "uniqueID": 1733617553867,
-                            "ioValues": [],
-                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
-                        },
-                        {
-                            "atomType": "Input",
-                            "name": "Number",
-                            "x": 0.04,
-                            "y": 0.8440111420612814,
-                            "uniqueID": 1733617553680,
-                            "ioValues": [],
-                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
-                        },
-                        {
-                            "atomType": "Input",
-                            "name": "Angle",
-                            "x": 0.04,
-                            "y": 0.5821727019498607,
-                            "uniqueID": 1733617553675,
-                            "ioValues": [],
-                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
-                        },
-                        {
-                            "atomType": "Circle",
-                            "name": "Circle",
-                            "x": 0.19136960600375233,
-                            "y": 0.20055710306406688,
-                            "uniqueID": 1733617554259,
-                            "ioValues": [
-                                {
-                                    "name": "diameter",
-                                    "ioValue": 10
-                                }
-                            ],
-                            "description": "Creates a new circle."
-                        },
-                        {
-                            "atomType": "Move",
-                            "name": "Move",
-                            "x": 0.2786116322701689,
-                            "y": 0.36490250696378834,
-                            "uniqueID": 1733617553538,
-                            "ioValues": [
-                                {
-                                    "name": "geometry",
-                                    "ioValue": 1733617554259
-                                },
-                                {
-                                    "name": "xDist",
-                                    "ioValue": 100
-                                },
-                                {
-                                    "name": "yDist",
-                                    "ioValue": 0
-                                },
-                                {
-                                    "name": "zDist",
-                                    "ioValue": 0
-                                }
-                            ],
-                            "description": "Moves a shape laterally in X, Y, Z."
-                        },
-                        {
-                            "atomType": "Code",
-                            "name": "Code",
-                            "x": 0.5741525423728814,
-                            "y": 0.6072423398328691,
-                            "uniqueID": 1733617553860,
-                            "ioValues": [
-                                {
-                                    "name": "Shape",
-                                    "ioValue": 1733617492789
-                                },
-                                {
-                                    "name": "Number",
-                                    "ioValue": 10
-                                },
-                                {
-                                    "name": "Angle",
-                                    "ioValue": 36
-                                }
-                            ],
-                            "description": "Defines a Replicad code block.",
-                            "codeVersion": 1,
-                            "code": "//Inputs:[Shape, Number, Angle];\n\n\nlet shapesArray = [];\nfor (let i = 0; i < Number; i++) {\n    let rotatedShape = await Rotate(Shape, 0, 0, Angle * i);\n    shapesArray.push(rotatedShape);\n}\n\nlet assembledShape = await Assembly(shapesArray)\n\nreturn assembledShape;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    /**\n    To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n    If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n    Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n    https://replicad.xyz/docs/introapp/UserGuide.html \n    Return a replicad object that includes geometry, color, tags and plane. \n\n\n    Example Code Atom:\n\n      Inputs:[shape, x];\n\n      let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n\n      return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n\n      - See more examples at _______ \n\n\n    */\n"
-                        },
-                        {
-                            "atomType": "Extrude",
-                            "name": "Extrude",
-                            "x": 0.4586864406779661,
-                            "y": 0.2618384401114206,
-                            "uniqueID": 1733617553887,
-                            "ioValues": [
-                                {
-                                    "name": "geometry",
-                                    "ioValue": 1733617553538
-                                },
-                                {
-                                    "name": "height",
-                                    "ioValue": 10
-                                }
-                            ],
-                            "description": "Extrudes a 2D shape. Input can be negitive. "
-                        }
-                    ],
-                    "allConnectors": [
-                        {
-                            "ap1Name": "number or geometry",
-                            "ap2Name": "Shape",
-                            "ap2Primary": false,
-                            "ap1ID": 1733617553867,
-                            "ap2ID": 1733617553860
-                        },
-                        {
-                            "ap1Name": "number or geometry",
-                            "ap2Name": "Number",
-                            "ap2Primary": false,
-                            "ap1ID": 1733617553680,
-                            "ap2ID": 1733617553860
-                        },
-                        {
-                            "ap1Name": "number or geometry",
-                            "ap2Name": "Angle",
-                            "ap2Primary": false,
-                            "ap1ID": 1733617553675,
-                            "ap2ID": 1733617553860
-                        },
-                        {
-                            "ap1Name": "geometry",
-                            "ap2Name": "geometry",
-                            "ap2Primary": true,
-                            "ap1ID": 1733617554259,
-                            "ap2ID": 1733617553538
-                        },
-                        {
-                            "ap1Name": "geometry",
-                            "ap2Name": "geometry",
-                            "ap2Primary": true,
-                            "ap1ID": 1733617553538,
-                            "ap2ID": 1733617553887
-                        },
-                        {
-                            "ap1Name": "geometry",
-                            "ap2Name": "number or geometry",
-                            "ap2Primary": false,
-                            "ap1ID": 1733617553860,
-                            "ap2ID": 1733617553911
-                        }
-                    ],
-                    "parentRepo": {
-                        "lastFoundGit": "2024-12-07T15:47:14.341Z",
-                        "repoName": "RotatePattern",
-                        "dateCreated": "2024-10-01T18:14:59Z",
-                        "readMe": "https://raw.githubusercontent.com/BarbourSmith/RotatePattern/master/README.md?sanitize=true",
-                        "yyyy": 2024,
-                        "topMoleculeID": 1727806499549,
-                        "githubMoleculesUsed": [],
-                        "html_url": "https://github.com/BarbourSmith/RotatePattern",
-                        "topics": [],
-                        "parentRepo": null,
-                        "forks": 1,
-                        "dateModified": "10/01/2024",
-                        "ranking": 0,
-                        "searchField": "rotatepattern barboursmith  ",
-                        "owner": "BarbourSmith",
-                        "description": "",
-                        "contentURL": "https://raw.githubusercontent.com/BarbourSmith/RotatePattern/master/project.abundance?sanitize=true",
-                        "svgURL": "https://raw.githubusercontent.com/BarbourSmith/RotatePattern/master/project.svg?sanitize=true"
-                    },
-                    "unitsKey": "Inches",
-                    "fileTypeVersion": 1,
-                    "compiledBom": []
-                },
-                {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.210978835978836,
-                    "y": 0.7214484679665739,
+                    "x": 0.1607142857142857,
+                    "y": 0.6267409470752089,
                     "uniqueID": 1733617630208,
                     "ioValues": [
                         {
@@ -1446,8 +1296,8 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.5006613756613757,
-                    "y": 0.5905292479108635,
+                    "x": 0.29894179894179895,
+                    "y": 0.467966573816156,
                     "uniqueID": 1733617638730,
                     "ioValues": [
                         {
@@ -1464,14 +1314,10 @@
                 {
                     "atomType": "Join",
                     "name": "Fusion",
-                    "x": 0.7242063492063492,
-                    "y": 0.596100278551532,
+                    "x": 0.44378306878306883,
+                    "y": 0.4428969359331476,
                     "uniqueID": 1733617653577,
                     "ioValues": [
-                        {
-                            "name": "Shape 1",
-                            "ioValue": 1733617553596
-                        },
                         {
                             "name": "Shape 2",
                             "ioValue": 1733617638730
@@ -1488,8 +1334,8 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.2374338624338624,
-                    "y": 0.8885793871866295,
+                    "x": 0.1607142857142857,
+                    "y": 0.8857938718662952,
                     "uniqueID": 1733617695042,
                     "ioValues": [
                         {
@@ -1502,8 +1348,8 @@
                 {
                     "atomType": "Difference",
                     "name": "Difference",
-                    "x": 0.4041005291005291,
-                    "y": 0.8412256267409471,
+                    "x": 0.3273809523809524,
+                    "y": 0.83008356545961,
                     "uniqueID": 1733617708919,
                     "ioValues": [
                         {
@@ -1520,7 +1366,7 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.5582010582010581,
+                    "x": 0.41203703703703703,
                     "y": 0.796657381615599,
                     "uniqueID": 1733617718662,
                     "ioValues": [
@@ -1538,8 +1384,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.8525132275132274,
-                    "y": 0.6128133704735376,
+                    "x": 0.5396825396825397,
+                    "y": 0.4818941504178273,
                     "uniqueID": 1733617736013,
                     "ioValues": [
                         {
@@ -1604,20 +1450,6 @@
                     "ap2Primary": true,
                     "ap1ID": 1733617461921,
                     "ap2ID": 1733617492789
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "Shape",
-                    "ap2Primary": false,
-                    "ap1ID": 1733617492789,
-                    "ap2ID": 1733617553596
-                },
-                {
-                    "ap1Name": "Geometry",
-                    "ap2Name": "Shape 1",
-                    "ap2Primary": false,
-                    "ap1ID": 1733617553596,
-                    "ap2ID": 1733617653577
                 },
                 {
                     "ap1Name": "geometry",
